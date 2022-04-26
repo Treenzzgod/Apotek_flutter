@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../Model/ListItem.dart';
 
 class Details extends StatefulWidget {
@@ -18,7 +17,6 @@ class _DetailsState extends State<Details> {
         title: Text('Details'),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: MediaQuery.of(context).size.height * .35,
@@ -40,12 +38,83 @@ class _DetailsState extends State<Details> {
                   ),
                   child: SingleChildScrollView(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Keterangan',
                           style: TextStyle(
                             fontSize: 15,
                             color: Colors.grey,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              items.nama,
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                            Text(
+                              items.harga,
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Text(
+                          items.kategori,
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Text(
+                          'Stock : ' + items.stok,
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 500,
+                          child: Container(
+                            padding: const EdgeInsets.all(20),
+                            margin: EdgeInsets.all(20),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                Column(
+                                  children: [
+                                    Text(
+                                      'Deskripsi',
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                    Text(
+                                      items.deskripsi,
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
