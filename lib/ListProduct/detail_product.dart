@@ -117,6 +117,15 @@ class _DetailsState extends State<Details> {
                             ),
                           ),
                         ),
+                        Center(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              minimumSize: Size(300, 40),
+                            ),
+                            onPressed: () {},
+                            child: Text('Beli'),
+                          ),
+                        )
                       ],
                     ),
                   ),

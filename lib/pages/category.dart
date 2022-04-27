@@ -10,6 +10,8 @@ class Category extends StatelessWidget {
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
+    final _biggerFont = const TextStyle(fontSize: 18);
+
 
     final List<item> items = [
       item(

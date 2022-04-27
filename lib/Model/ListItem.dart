@@ -6,6 +6,14 @@ class item {
   final String kategori;
   final String stok;
 
+  String get getNama => nama;
+  String get getDeskripsi => deskripsi;
+  String get getGambar => gambar;
+  String get getHarga => harga;
+  String get getKategori => kategori;
+  String get getStok => stok;
+
+
 
   item({
     required this.nama,
@@ -16,4 +24,6 @@ class item {
     required this.stok,
 
   });
+
+  
 }
