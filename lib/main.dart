@@ -1,5 +1,6 @@
 import 'package:loginpage/ListProduct/ListProduct_screen.dart';
 import 'package:loginpage/ListProduct/detail_product.dart';
+import 'package:loginpage/pages/cart.dart';
 import 'package:loginpage/pages/pages.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Category(),
+        body: Cart(),
       ),
     );
   }
