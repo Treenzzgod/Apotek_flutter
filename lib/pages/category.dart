@@ -12,12 +12,11 @@ class Category extends StatelessWidget {
     final double width = MediaQuery.of(context).size.width;
     final _biggerFont = const TextStyle(fontSize: 18);
 
-
     final List<item> items = [
       item(
         nama: 'ultraflu',
         deskripsi: 'adawdasda',
-        gambar: 'assets/images/profile.png',
+        gambar: 'assets/images/drug.jpg',
         harga: '5000',
         kategori: 'obat keras',
         stok: '5',
@@ -25,7 +24,7 @@ class Category extends StatelessWidget {
       item(
         nama: 'ultraflu',
         deskripsi: 'adawdasda',
-        gambar: 'assets/images/profile.png',
+        gambar: 'assets/images/drug.jpg',
         harga: '5000',
         kategori: 'obat keras',
         stok: '5',
@@ -33,7 +32,7 @@ class Category extends StatelessWidget {
       item(
         nama: 'ultraflu',
         deskripsi: 'adawdasda',
-        gambar: 'assets/images/profile.png',
+        gambar: 'assets/images/drug.jpg',
         harga: '5000',
         kategori: 'obat keras',
         stok: '5',
@@ -41,7 +40,7 @@ class Category extends StatelessWidget {
       item(
         nama: 'ultraflu',
         deskripsi: 'adawdasda',
-        gambar: 'assets/images/profile.png',
+        gambar: 'assets/images/drug.jpg',
         harga: '5000',
         kategori: 'obat keras',
         stok: '5',
@@ -49,7 +48,7 @@ class Category extends StatelessWidget {
       item(
         nama: 'ultraflu',
         deskripsi: 'adawdasda',
-        gambar: 'assets/images/profile.png',
+        gambar: 'assets/images/drug.jpg',
         harga: '5000',
         kategori: 'obat keras',
         stok: '5',

@@ -1,9 +1,9 @@
-import 'package:loginpage/ListProduct/ListProduct_screen.dart';
-import 'package:loginpage/ListProduct/detail_product.dart';
-import 'package:loginpage/pages/cart.dart';
-import 'package:loginpage/pages/checkout.dart';
-import 'package:loginpage/pages/pages.dart';
+import 'package:loginpage/ListProduct/Categories_list.dart';
 import 'package:flutter/material.dart';
+import 'package:loginpage/ListProduct/ListProduct_screen.dart';
+import 'package:loginpage/ListProduct/ListProduct_screen2.dart';
+import 'package:loginpage/pages/LoginScreen.dart';
+import 'package:loginpage/pages/pages.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Checkout(),
+        body: Category(),
       ),
     );
   }
